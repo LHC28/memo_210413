@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#wrap {width:1200px; margin:auto;}
+header {height:100px;}
+header .logo{width:300px; height:100px;}
+header .login-info {width:900px; height:100px;}
+
+.contents{height:500px;}
+.inputBox {height:400px;}
+table, th, td {border: 1px solid grey;}
+th {width:350px; height:60px;}
+.duplicatedBtn {font-size:13px;}
+.duplicatedId {color:green; font-size:10px;}
+ 
+ 
+
+footer {height:100px;}
