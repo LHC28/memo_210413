@@ -73,8 +73,10 @@ public class PostRestController {
 			,HttpServletRequest request
 			){
 		HttpSession session = request.getSession();
-		int userId = (int)request.getAttribute("userId");
-		String userLoginId = (String)request.getAttribute("userLoginId");
+		int userId = (int)session.getAttribute("userId");
+		// 여기서 session.get이 들어가야 하는데 request를 넣어버려 console에서 에러가 계속 발생.
+		// illegal invocation가 나왔는데 ajax로 넘기는 data가 자료형이 맞지 않는 등 상황에서 나오는 에러인듯.
+		String userLoginId = (String)session.getAttribute("userLoginId");
 		postBO.postDelete(userId, postId, userLoginId);
 		Map<String, String> result = new HashMap<>();
 		

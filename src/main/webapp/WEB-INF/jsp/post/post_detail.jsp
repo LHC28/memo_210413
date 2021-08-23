@@ -94,7 +94,7 @@
 			$.ajax({
 				url: '/post/delete'
 				,type: 'post'
-				,data: formData
+				,data: {"postId":$('#postDeleteBtn').data('post-id')}
 				,success: function(data){
 					if(data.result=="success"){
 						alert("삭제 완료");
