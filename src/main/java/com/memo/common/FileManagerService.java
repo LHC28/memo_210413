@@ -16,6 +16,8 @@ public class FileManagerService {
 	
 	private Logger logger = LoggerFactory.getLogger(FileManagerService.class);
 	
+	public static final int POST_MAX_SIZE = 3;
+	
 	// 실제 이미지가 (컴퓨터에) 저장될 경로
 	public final static String FILE_UPLOAD_PATH = "C:\\springproject\\projectex\\workspaceprojectEx\\memo\\images/"; // 상수값이고 변경할 수 없음.
 	
